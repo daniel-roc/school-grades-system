@@ -12,8 +12,13 @@
         Type your numeric grade below and the system will convert it to the
         corresponding letter:
       </p>
-      form
-      <textarea name="grade" id="studentGrade" cols="4" rows="1"></textarea>
+      <input
+        type="number"
+        placeholder="Type the grade here..."
+        id="gradeNumberInput"
+      />
+      <button type="button" onclick="getGradeNumber()">Get Value</button>
+      <p id="gradeLetterOutput"></p>
     </main>
 
     <script src="main.js"></script>

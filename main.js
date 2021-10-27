@@ -10,25 +10,29 @@
   * menor que 60 -      F
  */
 
-function gradeConversor(grade) {
-  let result
+function gradeConversor(gradeNumber) {
+  let gradeLetter
 
-  if (grade >= 90) {
-    result = 'A'
-  } else if (grade < 90 && grade >= 80) {
-    result = 'B'
-  } else if (grade < 80 && grade >= 70) {
-    result = 'C'
-  } else if (grade < 70 && grade >= 60) {
-    result = 'D'
-  } else if (grade < 60) {
-    result = 'F'
+  if (gradeNumber >= 90) {
+    gradeLetter = 'A'
+  } else if (gradeNumber < 90 && gradeNumber >= 80) {
+    gradeLetter = 'B'
+  } else if (gradeNumber < 80 && gradeNumber >= 70) {
+    gradeLetter = 'C'
+  } else if (gradeNumber < 70 && gradeNumber >= 60) {
+    gradeLetter = 'D'
+  } else if (gradeNumber >= 0 && gradeNumber < 60) {
+    gradeLetter = 'F'
   } else {
-    result = undefined
+    gradeLetter = 'undefined'
   }
 
-  return result
+  return gradeLetter
 }
 
-let grade = document.getElementById('studentGrade').value
-console.log(gradeConversor(grade))
+function getGradeNumber() {
+  let gradeNumber = document.getElementById('gradeNumberInput').value
+
+  document.getElementById('gradeLetterOutput').innerHTML =
+    gradeConversor(gradeNumber)
+}
