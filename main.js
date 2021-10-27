@@ -21,11 +21,14 @@ function gradeConversor(grade) {
     result = 'C'
   } else if (grade < 70 && grade >= 60) {
     result = 'D'
-  } else {
+  } else if (grade < 60) {
     result = 'F'
+  } else {
+    result = undefined
   }
 
   return result
 }
 
-console.log(gradeConversor(95))
+let grade = document.getElementById('studentGrade').value
+console.log(gradeConversor(grade))
