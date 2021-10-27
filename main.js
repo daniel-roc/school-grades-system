@@ -36,3 +36,9 @@ function getGradeNumber() {
   document.getElementById('gradeLetterOutput').innerHTML =
     gradeConversor(gradeNumber)
 }
+
+function resetValues() {
+  document.getElementById('gradeNumberInput').value = ''
+  document.getElementById('gradeLetterOutput').innerHTML =
+    'Your grade will be displayed here!'
+}

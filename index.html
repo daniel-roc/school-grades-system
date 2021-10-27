@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>School Grades System</title>
+    <title>Grades Convert System</title>
   </head>
   <body>
     <main>
-      <h1>School Grades System</h1>
+      <h1>School Grades Convert System</h1>
       <p>
         Type your numeric grade below and the system will convert it to the
         corresponding letter:
       </p>
-      <input
-        type="number"
-        placeholder="Type the grade here..."
-        id="gradeNumberInput"
-      />
-      <button type="button" onclick="getGradeNumber()">Get Value</button>
-      <p id="gradeLetterOutput"></p>
+      <form>
+        <input
+          type="number"
+          placeholder="Type a grade here..."
+          id="gradeNumberInput"
+        />
+        <button type="button" onclick="getGradeNumber()">Convert</button>
+        <button type="button" onclick="resetValues()">Reset</button>
+        <p id="gradeLetterOutput">Your grade will be displayed here!</p>
+      </form>
     </main>
 
     <script src="main.js"></script>
