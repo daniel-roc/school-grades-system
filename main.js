@@ -24,7 +24,7 @@ function gradeConversor(gradeNumber) {
   } else if (gradeNumber >= 0 && gradeNumber < 60) {
     gradeLetter = 'F'
   } else {
-    gradeLetter = 'undefined'
+    gradeLetter = 'Invalid grade!'
   }
 
   return gradeLetter
