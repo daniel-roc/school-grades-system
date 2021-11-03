@@ -5,4 +5,35 @@
 }
 
 main {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.grid {
+  text-align: center;
+}
+
+#title {
+  font-size: 1.875rem;
+  margin-top: 3.125rem;
+  margin-bottom: 1.562rem;
+}
+
+#title span {
+  color: hsla(36, 100%, 57%, 1);
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(36, 94%, 79%, 1),
+    hsla(159, 65%, 88%, 0.34)
+  );
+}
+
+#subtitle {
+  color: hsla(0, 0%, 50%, 1);
+  margin: 1.562rem 2.75rem;
 }
