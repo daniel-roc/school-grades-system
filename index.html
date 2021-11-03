@@ -13,21 +13,26 @@
     />
   </head>
   <body>
-    <main class="grid">
+    <main class="container grid">
       <h1 id="title">School Grades <span>Converter</span></h1>
+
       <div class="divider"></div>
+
       <p id="subtitle">
         Type your numeric score below and the system will convert it to the
         corresponding grade:
       </p>
+
       <form>
-        <input
-          type="number"
-          placeholder="Type your score here..."
-          id="gradeNumberInput"
-        />
-        <button type="button" onclick="getGradeNumber()">Convert</button>
-        <button type="button" onclick="resetValues()">Reset</button>
+        <input type="number" placeholder="" id="gradeNumberInput" />
+        <div class="grid buttons">
+          <button type="button" class="button" onclick="getGradeNumber()">
+            Convert
+          </button>
+          <button type="button" class="button" onclick="resetValues()">
+            Reset
+          </button>
+        </div>
         <p id="gradeLetterOutput">Your grade will be displayed here!</p>
       </form>
     </main>
