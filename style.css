@@ -65,7 +65,9 @@ form {
 
 .buttons {
   margin-top: 3.125rem;
-  align-content: space-between;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 0.625rem;
 }
 
 .button {
@@ -79,4 +81,17 @@ form {
 
   border-radius: 4%;
   border: none;
+}
+
+#gradeLetterOutput {
+  font-size: 4rem;
+  font-weight: 700;
+
+  background-color: hsla(36, 100%, 57%, 1);
+  width: 100px;
+  height: 100px;
+  border-radius: 4%;
+  margin-top: 3.125rem;
+
+  display: inline-block;
 }
